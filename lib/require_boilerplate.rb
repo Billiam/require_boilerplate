@@ -1,0 +1,6 @@
+require 'require_boilerplate/version'
+require 'require_boilerplate/rails/railtie'
+require 'require_boilerplate/config'
+require 'require_boilerplate/assets'
+require 'require_boilderplate/build'
+require 'require_boilderplate/install'

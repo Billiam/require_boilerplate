@@ -1,0 +1,25 @@
+common:
+  gzip: true
+  node_path: node
+  options:
+    generateSourceMaps: true
+    license_comments: false
+    uglify2:
+      output:
+        beautify: false
+        comments: false
+      compress:
+        sequences: false
+        global_defs:
+          DEBUG: false
+      warnings: false
+      mangle: true
+
+builds:
+  #file will be created under public/assets
+  application:
+    strict: true
+    name: vendor/requirejs
+    include: main
+    config: config.js
+    baseUrl: .
